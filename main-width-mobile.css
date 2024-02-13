@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    user-select: none;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+}
+
+@media(max-width:480px) {
+
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding-inline: 20px;
+        position: relative;
+        z-index: 10;
+    }
+
+    header .section3{
+        display: none;
+    }
+
+    header .section2 #menu-el{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        background-color: white;
+        width: 335px;
+        text-align: center;
+        box-shadow: 0px 10px 100px 10px #333;
+        padding: 13px;
+        border-radius: 10px;
+        display: none;
+    }
+    
+    #switch-btn.on + #menu-el{
+        display: block;
+    }
+
+    #switch-btn{
+        background-image: url(images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+    }
+
+    #switch-btn.on{
+        background-image: url(images/icon-close.svg);
+        background-position: 2px -2px;
+    }
+
+    header .section2 ul li{
+        list-style: none;
+        padding: 1rem 1.4rem;
+    }
+
+    header .section2 ul li a{
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    /* Header image */
+
+    .heading-image{
+        width: 100%;
+        position: relative;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .heading-image .main{
+        width: 100%;
+        height: 123%;
+    }
+
+    .heading-image .main-deskstop{
+        display: none;
+    }
+
+    .heading-image .abs{
+        position: absolute;
+        top: -140px;
+        right: 0;
+    }
+
+    .heading-image img{
+        width: 100%;
+    }
+
+    /* section background color */
+
+    .boxes{
+        background-color: hsl(0, 0%, 98%);
+        padding: 70px 0;
+    }
+
+
+    /* This is the code for the first section */
+
+    p{
+        word-wrap: break-word;
+
+    }
+
+    .first-section{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 100px;
+    }
+
+    .first-section p:nth-child(1){
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        word-wrap: break-word;
+        margin-bottom: 25px;
+        opacity: 0.8;
+        
+    }
+
+    .first-section .words{
+        opacity: 0.5;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    .first-section a{
+        text-decoration: none;
+        padding: 0.8rem 2.1rem;
+        background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        border-radius: 50px;
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the second section */
+
+    .second-section{
+        width: 90%;
+        text-align: center;
+        margin: auto
+    }
+
+    .second-section p:nth-child(1){
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        word-wrap: break-word;
+        margin-bottom: 25px;
+        opacity: 0.8;
+        
+    }
+
+    .second-section .words{
+        opacity: 0.5;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the third section */
+
+    .third-section{
+        width: 90%;
+        text-align: center;
+        margin: auto
+    }
+
+    .third-section .title{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        word-wrap: break-word;
+        margin: 25px 0;
+        opacity: 0.8;
+    }
+
+    .third-section .words{
+        opacity: 0.5;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the fourth section */
+
+    .fourth-section{
+        width: 90%;
+        text-align: center;
+        margin: auto
+    }
+
+    .fourth-section .title{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        word-wrap: break-word;
+        margin: 25px 0;
+        opacity: 0.8;
+    }
+
+    .fourth-section .words{
+        opacity: 0.5;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the fifth section */
+
+    .fifth-section{
+        width: 90%;
+        text-align: center;
+        margin: auto
+    }
+
+    .fifth-section .title{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        word-wrap: break-word;
+        margin: 25px 0;
+        opacity: 0.8;
+    }
+
+    .fifth-section .words{
+        opacity: 0.5;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the sixth section */
+
+    .sixth-section{
+        width: 90%;
+        text-align: center;
+        margin: auto
+    }
+
+    .sixth-section .title{
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        word-wrap: break-word;
+        margin: 25px 0;
+        opacity: 0.8;
+    }
+
+    .sixth-section .words{
+        opacity: 0.5;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 60px;
+        word-break: keep-all;
+        font-size: 0.9rem;
+    }
+
+    /* This is for the article section */
+
+    .Article-section{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 100px;
+    }
+
+    .article{
+        width: 90%;
+        margin: 0 auto 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .article .box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 0.5fr 0.5fr 0.5fr;
+        gap: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        background-color: hsl(0, 0%, 98%);
+        padding-bottom: 60px;
+    }
+
+    .article .box .image{
+        background-color: pink;
+        overflow: hidden;
+    }
+
+    .article .box .image img{
+        width: 100%;
+    }
+    .article .box .name{
+        font-size: 0.7rem;
+        opacity: 0.55;
+        display: grid;
+        align-items: center;
+        padding-inline: 25px;
+        padding-top: 10px;
+    }
+
+    .article .box .comment-head{
+        font-size: 1.1rem;
+        padding-inline: 25px;
+        font-weight: 500;
+    }
+
+    .article .box .comment-head a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .article .box .comment-head a:active{
+        color: hsl(136, 65%, 51%)
+    }
+
+    .article .box .comment{
+        padding-inline: 25px;
+        font-size: 0.85rem;
+        opacity: 0.55;
+        
+    }
+
+
+    footer{
+        background-color: hsl(233, 26%, 24%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        gap: 25px;
+        color: white;
+        position: relative;
+    }
+
+    footer .main1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;    
+    }
+
+    footer .main3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;    
+    }
+
+    footer .social{
+        display: flex;
+        gap: 15px;
+    }
+
+    footer .social img{
+        width: 25px
+    }
+
+    footer ul li{
+        list-style: none;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    footer ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    footer .link{
+        margin-top: 20px;
+    }
+
+    footer .link a{
+        text-decoration: none;
+        padding: 0.8rem 2.1rem;
+        background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+        border-radius: 50px;
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    footer .copyright{
+        font-size: 0.9rem;
+        margin-top: 20px;
+        opacity: 0.4;
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+
+}
